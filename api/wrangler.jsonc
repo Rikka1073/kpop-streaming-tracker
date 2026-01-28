@@ -2,7 +2,12 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "api",
   "main": "src/index.ts",
-  "compatibility_date": "2026-01-26"
+  "compatibility_date": "2026-01-26",
+  "vars": {
+    "SPOTIFY_CLIENT_ID": "b6b448619384416c8b75287bd3cf4653",
+    "SPOTIFY_CLIENT_SECRET": "7a994abd03f3498d8bc94a753ddeb36c",
+    "SPOTIFY_REDIRECT_URL": "https://kpop-streaming-tracker.vercel.app/",
+  },
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
