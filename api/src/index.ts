@@ -42,9 +42,11 @@ app.post("/callback", async (c) => {
   });
 
   const tokenData = (await tokenResponse.json()) as any;
+  console.log(tokenData);
 
   // 3. トークンを使ってユーザー情報を取得
   const userResponse = await fetch("https://api.spotify.com/v1/me", {
+    method: "GET",
     headers: {
       Authorization: `Bearer ${tokenData.access_token}`,
     },
